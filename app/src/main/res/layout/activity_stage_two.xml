@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StageTwoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="36dp"
+
+        android:layout_marginBottom="53dp"
+
+        android:padding="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="30dp">
+
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <TextView
+                android:id="@+id/currAttendanceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/totalClassesView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/submitAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:onClick="submitAttendance"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/StudentPassword" />
+
+            <EditText
+                android:id="@+id/StudentPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/baseline_lock_24"
+
+
+                android:ems="10"
+                android:hint="Q36s-GwJR-VW2r"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/submitAttendance"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="Enter the code here: "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/StudentPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="298dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="exit"
+
+        android:text="Exit"
+         />
+
+</LinearLayout>

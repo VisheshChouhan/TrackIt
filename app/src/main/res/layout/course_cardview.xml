@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/courseCardView"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    android:layout_width="200dp"
+    android:layout_height="120dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/CourseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CO24508"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating System"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintTop_toBottomOf="@+id/CourseId" />
+
+        <TextView
+            android:id="@+id/TeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prof. D.A. Mehta"
+            app:layout_constraintTop_toBottomOf="@+id/CourseName"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/CourseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Regular"
+            app:layout_constraintTop_toBottomOf="@+id/TeacherName"
+            tools:layout_editor_absoluteX="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    app:ignore="NamespaceTypo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/CourseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Course Code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_editor_absoluteX="16dp"
+            app:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/CourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Course Name"
+             />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MIDSEM1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/MST1"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toTopOf="@+id/ProgressIndicatorMST1"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/ProgressIndicatorMST1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="10dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:trackCornerRadius="10dp"
+                    card_view:trackThickness="20dp" />
+
+                <TextView
+                    android:id="@+id/StudentMarksMST1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST1" />
+
+                <TextView
+                    android:id="@+id/MaxMarksMST1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Your Marks: 20"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MIDSEM2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/MST2"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toTopOf="@+id/ProgressIndicatorMST2"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/ProgressIndicatorMST2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="10dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:trackCornerRadius="10dp"
+                    card_view:trackThickness="20dp" />
+
+                <TextView
+                    android:id="@+id/StudentMarksMST2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST2" />
+
+                <TextView
+                    android:id="@+id/MaxMarksMST2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Your Marks: 20"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MIDSEM3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/MST3"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toTopOf="@+id/ProgressIndicatorMST3"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/ProgressIndicatorMST3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:trackCornerRadius="10dp"
+                    card_view:trackThickness="20dp" />
+
+                <TextView
+                    android:id="@+id/StudentMarksMST3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Your Marks: 10"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST3" />
+
+                <TextView
+                    android:id="@+id/MaxMarksMST3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Your Marks: 20"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorMST3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EndSem"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/ENDSEM"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toTopOf="@+id/ProgressIndicatorEndSem"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/ProgressIndicatorEndSem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="10dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:trackCornerRadius="10dp"
+                    card_view:trackThickness="20dp" />
+
+                <TextView
+                    android:id="@+id/StudentMarksEndSem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Your Marks: 10"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorEndSem" />
+
+                <TextView
+                    android:id="@+id/MaxMarksEndSem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Your Marks: 20"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/ProgressIndicatorEndSem" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

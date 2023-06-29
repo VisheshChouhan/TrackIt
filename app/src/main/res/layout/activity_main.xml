@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_botton"
+        android:layout_width="37dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="52dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:onClick="start"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

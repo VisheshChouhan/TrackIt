@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/orangebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homePageActivity"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="@color/orangebackground"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+
+                android:background="@drawable/user_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="openProfile"
+
+                tools:srcCompat="@drawable/student_profile_pic" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="markAttendance"
+                android:text="@string/mark_attendance"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow2"
+        app:cardBackgroundColor="@color/yellow2"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="304dp"
+                android:background="#CFBBBB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_notifications_active_24" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="110dp"
+                android:text="Quiz remainder: Tomorrow at 4:00 PM.\nPrepare and good luck!"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courseRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="horizontal"
+        android:layout_margin="10dp"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:onClick="openCommunity"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Community"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView >
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/orangebackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="50dp"
+
+
+
+                app:cardCornerRadius="30dp"
+                app:cardElevation="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView13"
+                app:layout_constraintEnd_toStartOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="@string/total_attendance"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/attendance_logo" />
+
+                    <TextView
+                        android:id="@+id/Attendance_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="TextView"
+                        android:textColor="@color/yellow2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="39dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cardView15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView11">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Feed Uploads"
+                        android:layout_marginHorizontal="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/feed_uploads_logo" />
+
+                    <TextView
+                        android:id="@+id/Attendance_count3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="4 new to view"
+                        android:textColor="@color/yellow2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView15"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="39dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView13"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Latest"
+                        android:layout_marginHorizontal="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/pending_latest_logo" />
+
+                    <TextView
+                        android:id="@+id/Attendance_count5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="3 days left."
+                        android:textColor="@color/yellow2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="51dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView11"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Percentage"
+                        android:layout_marginHorizontal="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/percentage_logo" />
+
+                    <TextView
+                        android:id="@+id/Attendance_count2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="88.83%"
+                        android:textColor="@color/yellow2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

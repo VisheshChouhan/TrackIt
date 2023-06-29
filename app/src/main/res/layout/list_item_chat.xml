@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+
+    android:paddingTop="3dp"
+
+
+    android:layout_width="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/receivedCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        android:paddingStart="40dp"
+
+
+
+
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/transparent"
+            android:src="@drawable/shape_bubble_received"
+            >
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="1dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="15dp"
+                android:text="UserName"
+                android:textColor="@color/purple"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="6dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textview_chat_receieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="start"
+                android:maxWidth="250dp"
+
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="15dp"
+                android:background="@color/transparent"
+
+
+
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/textview_chat_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bubble_sent"
+        android:maxWidth="250dp"
+        android:minWidth="55dp"
+
+
+        android:layout_gravity="end"
+        android:gravity="start"
+
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="24dp"
+
+
+        android:textColor="@android:color/white"
+        android:textIsSelectable="true"
+        android:cursorVisible="false"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_chat_receieved" />
+
+
+
+</FrameLayout>
+
+
+
